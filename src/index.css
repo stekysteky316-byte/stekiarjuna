@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --color-brand-blue: #0A192F;
+  --color-accent-blue: #2E5BFF;
+  --color-soft-blue: #F0F4FF;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-brand-blue bg-white font-sans;
+  }
+}
+
+.glass-nav {
+  @apply backdrop-blur-md bg-white/80 border-b border-brand-blue/5;
+}
